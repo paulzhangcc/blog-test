@@ -7,14 +7,36 @@ module.exports = {
     repo: 'https://github.com/paulzhangcc',
     // 自定义仓库链接文字。
     repoLabel: 'paulzhangcc',
+    lastUpdated: 'Last Updated',
     nav: [
       {text: 'Home', link: '/'},
-      {text: 'FirstBlog', link: '/blog/FirstBlog.md'}
+      {
+        text: 'Blog',
+        items: [
+          {text: 'FirstBlog', link: '/blog/FirstBlog.md'},
+          {text: 'SecondBlog', link: '/blog/SecondBlog.md'},
+          {text: '简书', link: 'https://www.jianshu.com/u/99025d7b7f6a'}
+        ]
+      },
     ],
-    sidebar: [
-      ['/', '首页'],
-      ['/blog/FirstBlog.md', '我的第一篇博客'],
-      ['/blog/SecondBlog.md', '我的第二篇博客']
-    ],
+    sidebar: {
+      '/blog/': [
+        '',     /* /foo/ */
+        'FirstBlog',  /* /foo/one.html */
+        'SecondBlog'   /* /foo/two.html */
+      ],
+
+      '/life/': [
+        '',      /* /bar/ */
+        'FirstLife', /* /bar/three.html */
+        'SecondLife'   /* /bar/four.html */
+      ],
+
+      // fallback
+      '/': [
+        '',        /* / */
+        'contact', /* /contact.html */
+      ]
+    }
   }
 }
