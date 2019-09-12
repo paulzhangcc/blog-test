@@ -8,13 +8,14 @@ module.exports = {
     // 自定义仓库链接文字。
     repoLabel: 'paulzhangcc',
     lastUpdated: 'Last Updated',
+    displayAllHeaders: true,
+    sidebarDepth: 2,
     nav: [
-      {text: 'Home', link: '/'},
+      {text: 'Home', link: '/'}, {text: '博客', link: '/blog/'}, {text: '生活', link: '/life/'},
       {
-        text: 'Blog',
+        text: '快速链接',
         items: [
-          {text: 'FirstBlog', link: '/blog/FirstBlog.md'},
-          {text: 'SecondBlog', link: '/blog/SecondBlog.md'},
+          {text: '联系我们', link: '/contact'},
           {text: '简书', link: 'https://www.jianshu.com/u/99025d7b7f6a'}
         ]
       },
