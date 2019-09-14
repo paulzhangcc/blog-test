@@ -1,42 +1,52 @@
 module.exports = {
-  base: '/blog-test/',
-  title: '张晋峰',
-  description: '张晋峰的博客',
+  base: '/',
+  title: '宇电经纬智慧用电平台',
+  description: '宇电经纬智慧用电平台文档',
   themeConfig: {
     // 你的GitHub仓库，请正确填写
-    repo: 'https://github.com/paulzhangcc',
-    // 自定义仓库链接文字。
-    repoLabel: 'paulzhangcc',
+    //repo: 'https://github.com/paulzhangcc',
+    //repoLabel: 'paulzhangcc',
     lastUpdated: 'Last Updated',
-    displayAllHeaders: true,
-    sidebarDepth: 2,
+    displayAllHeaders: false,
+    sidebarDepth: 3,
     nav: [
-      {text: 'Home', link: '/'}, {text: '博客', link: '/blog/'}, {text: '生活', link: '/life/'},
+      {text: '首页', link: '/'},
+      {text: '白皮书', link: '/manager/'},
+      {text: '常见问题', link: '/problem/'},
+      {
+        text: '其他',
+        items: [
+          {text: '关于我们', link: '/other/about-us'},
+          {text: '联系我们', link: '/other/contact'},
+        ]
+      },
       {
         text: '快速链接',
         items: [
-          {text: '联系我们', link: '/contact'},
-          {text: '简书', link: 'https://www.jianshu.com/u/99025d7b7f6a'}
+          {text: '官网', link: 'http://www.cmematrix.com/'},
+          {text: 'PC', link: 'http://web.cmematrix.com/'},
+          {text: 'H5', link: 'http://app.cmematrix.com/'},
         ]
       },
     ],
     sidebar: {
-      '/blog/': [
-        '',     /* /foo/ */
-        'FirstBlog',  /* /foo/one.html */
-        'SecondBlog'   /* /foo/two.html */
+      '/manager/': [
+        '',
+        'role',
+        'menu',
+        'project',
+        'user',
+        'data',
+        'ebox',
+        'scene',
       ],
-
-      '/life/': [
-        '',      /* /bar/ */
-        'FirstLife', /* /bar/three.html */
-        'SecondLife'   /* /bar/four.html */
+      '/problem/': [
+        '',
       ],
-
       // fallback
-      '/': [
-        '',        /* / */
-        'contact', /* /contact.html */
+      '/other/': [
+        'about-us',
+        'contact',
       ]
     }
   }

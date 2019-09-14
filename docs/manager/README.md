@@ -1,0 +1,9 @@
+# 快速开始
+## 1创建公司项目
+<a href="./project.html">查看详情</a>
+## 2创建角色 
+<a href="./role.html">查看详情</a>
+## 3创建用户 
+<a href="./user.html">查看详情</a>
+## 4分配电箱
+<a href="./ebox.html">查看详情</a>
